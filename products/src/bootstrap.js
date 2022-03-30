@@ -5,7 +5,7 @@ const mount = (el) => {
 
   for (let i = 0; i < 5; i++) {
     const name = faker.commerce.productName();
-    products += `<div>${name}</div>`;
+    products += `<div>Product ${i}: ${name}</div>`;
   }
 
   el.innerHTML = products;
